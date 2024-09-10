@@ -1,3 +1,4 @@
+
 import { FC } from 'react';
 
 interface BlogPostProps {
@@ -18,3 +19,17 @@ const BlogPost: FC<BlogPostProps> = ({ params }) => {
 };
 
 export default BlogPost;
+
+export async function generateStaticParams() {
+  // 動的ルートに必要なパラメータを提供します
+  const paths = [
+    { params: { id: '1' } },
+    { params: { id: '2' } },
+    // 他の ID をここに追加します
+  ];
+
+  return {
+    paths,
+    fallback: false, // 必要に応じて true または 'blocking' に変更できます
+  };
+}
