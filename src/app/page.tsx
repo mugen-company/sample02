@@ -8,9 +8,9 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <header>
           <ul>
-            <AnimatedLink href="/about">Go to About</AnimatedLink>
-            <AnimatedLink href="/contact">Go to Contact</AnimatedLink>
-            <AnimatedLink href="/services">Go to Services</AnimatedLink>
+            <AnimatedLink href="/about">About</AnimatedLink>
+            <AnimatedLink href="/contact">Contact</AnimatedLink>
+            <AnimatedLink href="/services">Services</AnimatedLink>
           </ul>
         </header>
       </main>

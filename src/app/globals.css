@@ -32,6 +32,8 @@ body {
   --background-color: #a2adc5;
   --text-color: #000000;
   --link-color: #1a0dab;
+  /* トランジションの設定 */
+  transition: background-color 1.5s ease, color 1.5s ease;
 }
 
 /* ダークモード */
