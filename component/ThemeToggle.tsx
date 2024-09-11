@@ -4,14 +4,20 @@ import { useState, useEffect } from 'react';
 import { FaSun, FaMoon } from 'react-icons/fa';
 
 const ThemeToggle: React.FC = () => {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [theme, setTheme] = useState<'light' | 'dark'>('dark'); // 初期テーマはダークモード
 
   // 初期設定でローカルストレージからテーマを読み込む
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
-    const initialTheme = savedTheme || 'light';
-    setTheme(initialTheme);
-    document.documentElement.setAttribute('data-theme', initialTheme);
+    if (savedTheme) {
+      setTheme(savedTheme); // 保存されたテーマを適用
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    } else {
+      // ローカルストレージにテーマがない場合、デフォルトでライトモードを適用
+      setTheme('light');
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+    }
   }, []);
 
   // テーマをライトモードに変更
