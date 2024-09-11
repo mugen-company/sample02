@@ -14,6 +14,15 @@ export default function Contact() {
             <AnimatedLink href="/services">Services</AnimatedLink>
           </ul>
         </header>
+                  {/* motion.h2 を使って h2 タグにアニメーションを追加 */}
+                  <motion.h2
+            initial={{ opacity: 0, x: -40 }} // 初期状態
+            animate={{ opacity: 1, x: 0 }} // アニメーション終了後の状態
+            transition={{ duration: 1.7 }} // アニメーションの持続時間
+            whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
+          >
+            Contact
+          </motion.h2>
         <footer>
           <motion.p
             initial={{ opacity: 0, y: 40 }} // 初期状態
