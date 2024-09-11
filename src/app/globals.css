@@ -51,6 +51,7 @@ body {
 
 a {
   color: var(--link-color);
+  font-size: 1rem;
 }
 
 /* 他のスタイルもここに追加 */
@@ -62,4 +63,8 @@ a {
 
 header ul{
   display: flex;
+}
+
+h2,h3,p{
+  font-size: 1rem;
 }
