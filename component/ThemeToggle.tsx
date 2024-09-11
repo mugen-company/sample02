@@ -47,7 +47,8 @@ const ThemeToggle: React.FC = () => {
           background: theme === 'light' ? '#f1c40f' : '#34495e',
           borderRadius: '50px',
           padding: '5px',
-          width: '100px',
+          width: '60px',
+          height:'60px',
           transition: 'background 0.3s ease',
         }}
       >
@@ -63,11 +64,11 @@ const ThemeToggle: React.FC = () => {
         {/* トグルの丸 */}
         <div
           style={{
-            width: '31px',
-            height: '31px',
+            width: '30px',
+            height: '20px',
             background: '#fff',
             borderRadius: '50%',
-            transform: theme === 'light' ? 'translateX(0)' : 'translateX(34px)',
+            transform: theme === 'light' ? 'translateX(0)' : 'translateX(17px)',
             transition: 'transform 0.3s ease',
           }}
         />
