@@ -13,6 +13,7 @@ export default function Home() {
             <AnimatedLink href="/services">Services</AnimatedLink>
           </ul>
         </header>
+        <footer>@copyright リコリス歯科</footer>
       </main>
     </div>
   );
