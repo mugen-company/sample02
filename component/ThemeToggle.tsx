@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { FaSun, FaMoon } from 'react-icons/fa';
 
 const ThemeToggle: React.FC = () => {
-  const [theme, setTheme] = useState<'light' | 'dark'>('dark'); // 初期テーマはダークモード
+  const [theme, setTheme] = useState<'light' | 'dark'>('light'); // 初期テーマはダークモード
 
   // 初期設定でローカルストレージからテーマを読み込む
   useEffect(() => {

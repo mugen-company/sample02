@@ -29,7 +29,7 @@ body {
 
 /* デフォルトはライトモード */
 :root {
-  --background-color: #1c385f;
+  --background-color: #dae1ec;
   --text-color: #000000;
   --link-color: #ffffff;
   /* トランジションの設定 */
@@ -38,7 +38,7 @@ body {
 
 /* ダークモード */
 [data-theme='dark'] {
-  --background-color: #3d434b;
+  --background-color: #163053;
   --text-color: #bfbfd4;
   --link-color: #bb86fc;
 }
