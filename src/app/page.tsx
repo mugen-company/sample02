@@ -2,7 +2,7 @@
 
 import AnimatedLink from "../../component/AnimatedLink";
 // import { motion } from "framer-motion";
-import Footer from '../../component/fotter';
+import Footer from '../../component/Fotter';
 
 export default function Home() {
   return (
@@ -10,9 +10,9 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <header>
           <ul>
-            <AnimatedLink href="/about">About</AnimatedLink>
-            <AnimatedLink href="/contact">Contact</AnimatedLink>
-            <AnimatedLink href="/services">Services</AnimatedLink>
+            <AnimatedLink href="/about">外来</AnimatedLink>
+            <AnimatedLink href="/contact">訪問歯科</AnimatedLink>
+            <AnimatedLink href="/services">お知らせ</AnimatedLink>
           </ul>
         </header>
         <Footer />
