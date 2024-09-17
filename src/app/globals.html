@@ -167,17 +167,17 @@ body {
 
 /* デフォルトはライトモード */
 :root {
-  --background-color: #a2adc5;
+  --background-color: #1c385f;
   --text-color: #000000;
-  --link-color: #1a0dab;
+  --link-color: #ffffff;
   /* トランジションの設定 */
   transition: background-color 1.5s ease, color 1.5s ease;
 }
 
 /* ダークモード */
 [data-theme='dark'] {
-  --background-color: #1c385f;
-  --text-color: #e0e0e0;
+  --background-color: #3d434b;
+  --text-color: #bfbfd4;
   --link-color: #bb86fc;
 }
 
@@ -201,6 +201,11 @@ a {
 
 header ul{
   display: flex;
+  width: 100%;
+}
+
+header ul li{
+padding: ;
 }
 
 h2,h3,p{
@@ -224,7 +229,7 @@ header {
   padding: 0 20px;
   left: 5px;
   box-sizing: border-box;
-  z-index: 200;
+  /* z-index: -1; */
   pointer-events: none;
   pointer-events: auto;
   transition: all 0.25s cubic-bezier(0.17,0.84,0.44,1);
