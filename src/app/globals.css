@@ -31,7 +31,7 @@ body {
 :root {
   --background-color: #dae1ec;
   --text-color: #000000;
-  --link-color: #ffffff;
+  --link-color: #404043;
   /* トランジションの設定 */
   transition: background-color 1.5s ease, color 1.5s ease;
 }
@@ -40,7 +40,7 @@ body {
 [data-theme='dark'] {
   --background-color: #163053;
   --text-color: #bfbfd4;
-  --link-color: #bb86fc;
+  --link-color: #eeedfa;
 }
 
 /* 共通スタイル */
