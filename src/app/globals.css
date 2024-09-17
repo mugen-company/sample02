@@ -29,7 +29,7 @@ body {
 
 /* デフォルトはライトモード */
 :root {
-  --background-color: #a2adc5;
+  --background-color: #1c385f;
   --text-color: #000000;
   --link-color: #1a0dab;
   /* トランジションの設定 */
@@ -86,7 +86,7 @@ header {
   padding: 0 20px;
   left: 5px;
   box-sizing: border-box;
-  z-index: 200;
+  /* z-index: -1; */
   pointer-events: none;
   pointer-events: auto;
   transition: all 0.25s cubic-bezier(0.17,0.84,0.44,1);

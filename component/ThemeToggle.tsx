@@ -43,6 +43,9 @@ const ThemeToggle: React.FC = () => {
         cursor: 'pointer',
         fontSize: '1.5rem',
         gap: '10px',
+        position:'absolute',
+        right:'5%',
+        margin:'7%',
       }}
     >
       <div

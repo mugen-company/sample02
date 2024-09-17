@@ -14,8 +14,8 @@ const AnimatedLink: React.FC<AnimatedLinkProps> = ({ href, children }) => {
   return (
     // framer-motionのmotion.liを使って、アニメーション付きのリストアイテムを作成
     <motion.li
-      initial={{ opacity: 0, x: -110 }} // 初期状態のアニメーション設定
-      animate={{ opacity: 1, x: 0 }} // アニメーション後の状態設定
+      initial={{ opacity: 0, y: -50 }} // 初期状態のアニメーション設定
+      animate={{ opacity: 1, y: 0 }} // アニメーション後の状態設定
       transition={{ duration: 1.7,bounceDamping:1.5 }} // アニメーションの持続時間設定
       whileHover={{ scale: 1.1 }} // ホバー時のスケールアニメーション
       // whileTap={{ scale: 1.95 }} // タップ時のスケールアニメーション
