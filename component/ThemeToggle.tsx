@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { FaSun, FaMoon } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
+import { FaMoon, FaSun } from 'react-icons/fa';
 
 const ThemeToggle: React.FC = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>('light'); // 初期テーマはダークモード
@@ -77,7 +77,7 @@ const ThemeToggle: React.FC = () => {
             height: '20px',
             background: '#fff',
             borderRadius: '50%',
-            transform: theme === 'light' ? 'translateX(0)' : 'translateX(17px)',
+            transform: theme === 'light' ? 'translateX(-16px)' : 'translateX(17px)',
             transition: 'transform 0.3s ease',
           }}
         />
