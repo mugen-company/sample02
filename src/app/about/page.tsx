@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"; // framer-motionライブラリからmotionをインポート
 import AnimatedLink from "../../../component/AnimatedLink";
-import Fotter from "../../../component/fotter";
+import Fotter from "../../../component/Fotter";
 
 export default function About() {
   return (
