@@ -7,7 +7,7 @@ import Head from "../../component/Head";
 import ImageSlider from "../../component/ImageSlider";
 
 export default function Home() {
-  const images = ["/images/kv_1.jpg", "/images/kv_3.jpg", "/images/kv_1.jpg"]; // スライドショー用の画像パス
+  const images = ["https://github.com/mugen-company/sample01/blob/main/public/images/kv_1.jpg?raw=true", "https://github.com/mugen-company/sample01/blob/main/public/images/kv_3.jpg?raw=true", "https://github.com/mugen-company/sample01/blob/main/public/images/kv_1.jpg?raw=true"]; // スライドショー用の画像パス
 
   const [isClient, setIsClient] = useState(false);
 
@@ -20,20 +20,13 @@ export default function Home() {
   }
 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Head />
-        <ImageSlider images={images} />
-        <div className="middle">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-        <Footer />
       </main>
+      <ImageSlider images={images} />
+      <Footer />
     </div>
   );
 }
