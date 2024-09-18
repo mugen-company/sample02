@@ -24,10 +24,10 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
     <div className="relative w-full h-[400px] overflow-hidden">
       <motion.div
         key={currentIndex}
-        initial={{ opacity: 0, y: -15 }} // 初期位置と透明度
-        animate={{ opacity: 1, y: 0 }} // アニメーション後の位置と透明度
-        exit={{ opacity: 0, y: 15 }} // アニメーション終了時の位置
-        transition={{ duration: 1.6 }} // アニメーションの速度
+        initial={{ opacity: 0, x: -25 }} // 初期位置と透明度
+        animate={{ opacity: 1, x: 0 }} // アニメーション後の位置と透明度
+        exit={{ opacity: 0, x: 15 }} // アニメーション終了時の位置
+        transition={{ duration: 1.8 }} // アニメーションの速度
         className="absolute w-full h-full"
       >
         <Image
