@@ -18,7 +18,7 @@ export default function About() {
             transition={{ duration: 1.7 }} // アニメーションの持続時間
             whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
           >
-            Company
+            リコリス歯科 / 私たちについて
           </motion.h2>
 
           {/* motion.h2 を使って h2 タグにアニメーションを追加 */}
@@ -28,7 +28,7 @@ export default function About() {
             transition={{ duration: 1.9 }} // アニメーションの持続時間
             whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
           >
-            私
+            企
           </motion.p>
           {/* motion.h2 を使って h2 タグにアニメーションを追加 */}
           <motion.p
@@ -37,7 +37,7 @@ export default function About() {
             transition={{ duration: 1.9 }} // アニメーションの持続時間
             whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
           >
-            達
+            業
           </motion.p>
                     {/* motion.h2 を使って h2 タグにアニメーションを追加 */}
                     <motion.p
@@ -46,7 +46,7 @@ export default function About() {
             transition={{ duration: 1.9 }} // アニメーションの持続時間
             whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
           >
-            に
+            理
           </motion.p>
                     {/* motion.h2 を使って h2 タグにアニメーションを追加 */}
                     <motion.p
@@ -55,25 +55,7 @@ export default function About() {
             transition={{ duration: 1.9 }} // アニメーションの持続時間
             whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
           >
-            つ
-          </motion.p>
-                    {/* motion.h2 を使って h2 タグにアニメーションを追加 */}
-                    <motion.p
-            initial={{ opacity: 0, y: 80 }} // 初期状態
-            animate={{ opacity: 1, y: 0 }} // アニメーション終了後の状態
-            transition={{ duration: 1.9 }} // アニメーションの持続時間
-            whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
-          >
-            い
-          </motion.p>
-                    {/* motion.h2 を使って h2 タグにアニメーションを追加 */}
-                    <motion.p
-            initial={{ opacity: 0, y: 90 }} // 初期状態
-            animate={{ opacity: 1, y: 0 }} // アニメーション終了後の状態
-            transition={{ duration: 1.9 }} // アニメーションの持続時間
-            whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
-          >
-            て
+            念
           </motion.p>
         </div>
       <Fotter />

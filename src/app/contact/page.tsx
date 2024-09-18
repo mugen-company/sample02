@@ -17,7 +17,7 @@ export default function Contact() {
             transition={{ duration: 1.7 }} // アニメーションの持続時間
             whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
           >
-            Contact
+            コンタクト
           </motion.h2>
       <Fotter />
       </main>

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Head from "../../../component/Head";
 
-export default function Services() {
+export default function News() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
@@ -15,7 +15,7 @@ export default function Services() {
           transition={{ duration: 1.7 }} // アニメーションの持続時間
           whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
         >
-          Service
+          リコリス歯科 / お知らせ
         </motion.h2>
         <footer>
           <motion.p

@@ -16,8 +16,8 @@ const AnimatedLink: React.FC<AnimatedLinkProps> = ({ href, children }) => {
     <motion.li
       initial={{ opacity: 0, y: -10 }} // 初期状態のアニメーション設定
       animate={{ opacity: 1, y: 0 }} // アニメーション後の状態設定
-      transition={{ duration: 1.7,bounceDamping:1.5 }} // アニメーションの持続時間設定
-      whileHover={{ scale: 1.1 }} // ホバー時のスケールアニメーション
+      transition={{ duration: 1.5,bounceDamping:1.5 }} // アニメーションの持続時間設定
+      // whileHover={{ scale: 1.1 }} // ホバー時のスケールアニメーション
     >
       {/* Next.jsのLinkコンポーネントを使ってリンクを作成 */}
       <Link href={href}>{children}</Link>
