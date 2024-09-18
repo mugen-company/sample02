@@ -44,8 +44,8 @@ const ThemeToggle: React.FC = () => {
         fontSize: '1.5rem',
         gap: '10px',
         position:'absolute',
-        right:'5%',
-        margin:'7%',
+        right:'3%',
+        top:'1.5%',
       }}
     >
       <div
@@ -53,7 +53,7 @@ const ThemeToggle: React.FC = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          background: theme === 'light' ? '#f1c40f' : '#34495e',
+          background: theme === 'light' ? 'rgb(255 205 146)' : '#34495e',
           borderRadius: '50px',
           padding: '5px',
           width: '60px',

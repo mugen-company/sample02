@@ -3,8 +3,12 @@
 import { motion } from "framer-motion"; // framer-motionライブラリからmotionをインポート
 import Fotter from "../../../component/Fotter";
 import Head from "../../../component/Head";
+import ImageSlider from "../../../component/ImageSlider";
 
 export default function About() {
+
+  const images = ["/images/kv_1.jpg", "/images/kv_3.jpg", "/images/kv_1.jpg"]; // スライドショー用の画像パス
+
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
@@ -16,7 +20,7 @@ export default function About() {
             initial={{ opacity: 0, x: -40 }} // 初期状態
             animate={{ opacity: 1, x: 0 }} // アニメーション終了後の状態
             transition={{ duration: 1.7 }} // アニメーションの持続時間
-            whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
+            // whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
           >
             リコリス歯科 / 私たちについて
           </motion.h2>
@@ -26,7 +30,7 @@ export default function About() {
             initial={{ opacity: 0, y: 40 }} // 初期状態
             animate={{ opacity: 1, y: 0 }} // アニメーション終了後の状態
             transition={{ duration: 1.9 }} // アニメーションの持続時間
-            whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
+            // whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
           >
             企
           </motion.p>
@@ -35,7 +39,7 @@ export default function About() {
             initial={{ opacity: 0, y: 50 }} // 初期状態
             animate={{ opacity: 1, y: 0 }} // アニメーション終了後の状態
             transition={{ duration: 1.9 }} // アニメーションの持続時間
-            whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
+            // whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
           >
             業
           </motion.p>
@@ -44,7 +48,7 @@ export default function About() {
             initial={{ opacity: 0, y: 60 }} // 初期状態
             animate={{ opacity: 1, y: 0 }} // アニメーション終了後の状態
             transition={{ duration: 1.9 }} // アニメーションの持続時間
-            whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
+            // whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
           >
             理
           </motion.p>
@@ -53,10 +57,11 @@ export default function About() {
             initial={{ opacity: 0, y: 70 }} // 初期状態
             animate={{ opacity: 1, y: 0 }} // アニメーション終了後の状態
             transition={{ duration: 1.9 }} // アニメーションの持続時間
-            whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
+            // whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
           >
             念
           </motion.p>
+          <ImageSlider images={images} />
         </div>
       <Fotter />
       </main>
