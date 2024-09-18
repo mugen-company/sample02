@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Footer from "../../component/Fotter";
 import Head from "../../component/Head";
 import ImageSlider from "../../component/ImageSlider";
+import MarqueeText from "../../component/MarqueeText";
 
 export default function Home() {
   const images = ["https://github.com/mugen-company/sample01/blob/main/public/images/kv_1.jpg?raw=true", "https://github.com/mugen-company/sample01/blob/main/public/images/kv_3.jpg?raw=true", "https://github.com/mugen-company/sample01/blob/main/public/images/kv_1.jpg?raw=true"]; // スライドショー用の画像パス
@@ -26,6 +27,7 @@ export default function Home() {
         <Head />
       </main>
       <ImageSlider images={images} />
+      <MarqueeText />
       <Footer />
     </div>
   );
