@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import React, { CSSProperties } from "react";
 import '../component/ThemeToggle';
 import ThemeToggle from '../component/ThemeToggle';
 import AnimatedLink from './AnimatedLink';
@@ -26,7 +27,7 @@ export default function Head() {
     };
   }, [lastScrollY]);
 
-  const headerStyle = {
+  const headerStyle:CSSProperties  = {
     transition: 'transform 0.3s ease-in-out',
     position: 'fixed', // 型キャスト
     width: '100%',
@@ -37,7 +38,7 @@ export default function Head() {
     transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
   } as React.CSSProperties;
 
-  const headStyleh1 = {
+  const headStyleh1:CSSProperties  = {
     textAlign :'center',
     width:'100%',
     fontFamily: 'serif',
