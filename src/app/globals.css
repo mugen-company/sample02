@@ -91,7 +91,7 @@ header {
   box-sizing: border-box;
   pointer-events: none;
   pointer-events: auto;
-  transition: all 0.25s cubic-bezier(0.17,0.84,0.44,1);
+  transition: all 0.55s cubic-bezier(0.17,0.84,0.44,1);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -113,3 +113,4 @@ header {
 .hidden {
   transform: translateY(-100%);
 }
+

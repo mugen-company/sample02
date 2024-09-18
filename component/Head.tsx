@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
-import React, { CSSProperties } from "react";
+import React, { CSSProperties, useEffect, useState } from "react";
 import '../component/ThemeToggle';
 import ThemeToggle from '../component/ThemeToggle';
 import AnimatedLink from './AnimatedLink';
@@ -28,7 +27,7 @@ export default function Head() {
   }, [lastScrollY]);
 
   const headerStyle:CSSProperties  = {
-    transition: 'transform 0.3s ease-in-out',
+    transition: 'transform 1.3s ease-in-out',
     position: 'fixed', // 型キャスト
     width: '100%',
     top: 0,
