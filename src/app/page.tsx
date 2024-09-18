@@ -7,7 +7,7 @@ import Head from "../../component/Head";
 import ImageSlider from "../../component/ImageSlider";
 
 export default function Home() {
-  const images = ["https://github.com/mugen-company/sample01/blob/main/public/images/kv_1.jpg?raw=true", "/images/kv_3.jpg", "https://github.com/mugen-company/sample01/blob/main/public/images/kv_1.jpg?raw=true"]; // スライドショー用の画像パス
+  const images = ["https://github.com/mugen-company/sample01/blob/main/public/images/kv_1.jpg?raw=true", "https://github.com/mugen-company/sample01/blob/main/public/images/kv_3.jpg?raw=true", "https://github.com/mugen-company/sample01/blob/main/public/images/kv_1.jpg?raw=true"]; // スライドショー用の画像パス
 
   const [isClient, setIsClient] = useState(false);
 
