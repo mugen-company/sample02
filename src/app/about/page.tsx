@@ -27,8 +27,8 @@ export default function About() {
 
           {/* motion.h2 を使って h2 タグにアニメーションを追加 */}
           <motion.p
-            initial={{ opacity: 0, y: 40 }} // 初期状態
-            animate={{ opacity: 1, y: 0 }} // アニメーション終了後の状態
+            initial={{ opacity: 0, x: 40 }} // 初期状態
+            animate={{ opacity: 1, x: 0 }} // アニメーション終了後の状態
             transition={{ duration: 1.9 }} // アニメーションの持続時間
             // whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
           >
@@ -36,8 +36,8 @@ export default function About() {
           </motion.p>
           {/* motion.h2 を使って h2 タグにアニメーションを追加 */}
           <motion.p
-            initial={{ opacity: 0, y: 50 }} // 初期状態
-            animate={{ opacity: 1, y: 0 }} // アニメーション終了後の状態
+            initial={{ opacity: 0, x: 44 }} // 初期状態
+            animate={{ opacity: 1, x: 0 }} // アニメーション終了後の状態
             transition={{ duration: 1.9 }} // アニメーションの持続時間
             // whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
           >
@@ -45,8 +45,8 @@ export default function About() {
           </motion.p>
                     {/* motion.h2 を使って h2 タグにアニメーションを追加 */}
                     <motion.p
-            initial={{ opacity: 0, y: 60 }} // 初期状態
-            animate={{ opacity: 1, y: 0 }} // アニメーション終了後の状態
+            initial={{ opacity: 0, x: 46 }} // 初期状態
+            animate={{ opacity: 1, x: 0 }} // アニメーション終了後の状態
             transition={{ duration: 1.9 }} // アニメーションの持続時間
             // whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
           >
@@ -54,8 +54,8 @@ export default function About() {
           </motion.p>
                     {/* motion.h2 を使って h2 タグにアニメーションを追加 */}
                     <motion.p
-            initial={{ opacity: 0, y: 70 }} // 初期状態
-            animate={{ opacity: 1, y: 0 }} // アニメーション終了後の状態
+            initial={{ opacity: 0, x: 50 }} // 初期状態
+            animate={{ opacity: 1, x: 0 }} // アニメーション終了後の状態
             transition={{ duration: 1.9 }} // アニメーションの持続時間
             // whileHover={{ scale: 1.05 }} // ホバー時に少し拡大
           >

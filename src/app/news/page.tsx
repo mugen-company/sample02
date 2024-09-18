@@ -21,6 +21,7 @@ export default function News() {
         >
           リコリス歯科 / お知らせ
         </motion.h2>
+        <ImageSlider images={images} />
         <footer>
           <motion.p
             initial={{ opacity: 0, y: 40 }} // 初期状態
@@ -102,7 +103,7 @@ export default function News() {
           >
             t
           </motion.p>
-          <ImageSlider images={images} />
+
         </footer>
       </main>
     </div>

@@ -7,7 +7,7 @@ import Head from "../../component/Head";
 import ImageSlider from "../../component/ImageSlider";
 
 export default function Home() {
-  const images = ["/images/kv_1.jpg", "/images/kv_3.jpg", "/images/kv_1.jpg"]; // スライドショー用の画像パス
+  const images = ["../../images/kv_1.jpg", "../../images/kv_3.jpg", "../../images/kv_1.jpg"]; // スライドショー用の画像パス
 
   const [isClient, setIsClient] = useState(false);
 
