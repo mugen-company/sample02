@@ -9,7 +9,6 @@ export default function About() {
 
   const images = ["https://github.com/mugen-company/sample01/blob/main/public/images/kv_1.jpg?raw=true", "https://github.com/mugen-company/sample01/blob/main/public/images/kv_3.jpg?raw=true", "https://github.com/mugen-company/sample01/blob/main/public/images/kv_1.jpg?raw=true"]; // スライドショー用の画像パス
 
-
   return (
     // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
     <div className="">
@@ -63,8 +62,8 @@ export default function About() {
           >
             念
           </motion.p>
-          <ImageSlider images={images} />
         </div>
+        <ImageSlider images={images} />
         <Fotter />
       </main>
     </div>
