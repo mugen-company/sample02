@@ -25,15 +25,15 @@ export default function Head() {
   }, [lastScrollY]);
 
   const headerStyle = {
-    transition: 'transform 1.0s ease-in-out',
-    position: 'fixed',
+    transition: 'transform 0.3s ease-in-out',
+    position: 'fixed', // 型キャスト
     width: '100%',
     top: 0,
     left: 0,
-    // backgroundColor: 'white',
+    backgroundColor: 'white',
     zIndex: 1000,
     transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
-  };
+  } as React.CSSProperties;
 
   return (
     <header style={headerStyle}>
