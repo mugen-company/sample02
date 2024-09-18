@@ -9,7 +9,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }
@@ -28,7 +28,7 @@ body {
 
 /* デフォルトはライトモード */
 :root {
-  --background-color: #dae1ec;
+  --background-color: #fff;
   --text-color: #000000;
   --link-color: #404043;
   /* トランジションの設定 */
