@@ -22,7 +22,7 @@ const marqueeContainerStyle: React.CSSProperties = {
   width: '100%',
   position: 'relative',
   height: '100px', // 高さを調整
-  backgroundColor: '#f5f5f5', // 背景色（オプション）
+  // backgroundColor: '#f5f5f5', // 背景色（オプション）
 };
 
 const marqueeContentStyle: React.CSSProperties = {
