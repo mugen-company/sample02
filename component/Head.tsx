@@ -26,7 +26,7 @@ export default function Head() {
     };
   }, [lastScrollY]);
 
-  const headerStyle:CSSProperties  = {
+  const headerStyle: CSSProperties = {
     transition: 'transform 1.3s ease-in-out',
     position: 'fixed', // 型キャスト
     width: '100%',
@@ -37,9 +37,9 @@ export default function Head() {
     transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
   } as React.CSSProperties;
 
-  const headStyleh1:CSSProperties  = {
-    textAlign :'center',
-    width:'100%',
+  const headStyleh1: CSSProperties = {
+    textAlign: 'center',
+    width: '100%',
     fontFamily: 'serif',
   } as React.CSSProperties;
 
@@ -52,15 +52,96 @@ export default function Head() {
         <AnimatedLink href="/news">お知らせ</AnimatedLink>
         <ThemeToggle />
       </ul>
-    
-    <motion.h1 style={headStyleh1} 
-        initial={{ opacity: 0, y: -15 }} // 初期位置と透明度
-        animate={{ opacity: 1, y: 0 }} // アニメーション後の位置と透明度
-        exit={{ opacity: 0, y: 15 }} // アニメーション終了時の位置
-        transition={{ duration: 1.6 }} // アニメーションの速度
-        className="absolute w-full h-full"
-    >リコリス歯科 / 訪問歯科</motion.h1>
-
+      <div className='rco'>
+        <motion.p
+          initial={{ opacity: 0, x: 40 }} // 初期状態
+          animate={{ opacity: 1, x: 0 }} // アニメーション終了後の状態
+          transition={{ duration: 1.9 }} // アニメーションの持続時間
+          whileHover={{ scale: 1.05 }} // ホバー時に少し拡大>
+        >
+          リ
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: 42 }} // 初期状態
+          animate={{ opacity: 1, x: 0 }} // アニメーション終了後の状態
+          transition={{ duration: 1.9 }} // アニメーションの持続時間
+          whileHover={{ scale: 1.05 }} // ホバー時に少し拡大>
+        >
+          コ
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: 44 }} // 初期状態
+          animate={{ opacity: 1, x: 0 }} // アニメーション終了後の状態
+          transition={{ duration: 1.9 }} // アニメーションの持続時間
+          whileHover={{ scale: 1.05 }} // ホバー時に少し拡大>
+        >
+          リ
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: 46 }} // 初期状態
+          animate={{ opacity: 1, x: 0 }} // アニメーション終了後の状態
+          transition={{ duration: 1.9 }} // アニメーションの持続時間
+          whileHover={{ scale: 1.05 }} // ホバー時に少し拡大>
+        >
+          ス
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: 48 }} // 初期状態
+          animate={{ opacity: 1, x: 0 }} // アニメーション終了後の状態
+          transition={{ duration: 1.9 }} // アニメーションの持続時間
+          whileHover={{ scale: 1.05 }} // ホバー時に少し拡大>
+        >
+          歯
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: 50 }} // 初期状態
+          animate={{ opacity: 1, x: 0 }} // アニメーション終了後の状態
+          transition={{ duration: 1.9 }} // アニメーションの持続時間
+          whileHover={{ scale: 1.05 }} // ホバー時に少し拡大>
+        >
+          科
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: 52 }} // 初期状態
+          animate={{ opacity: 1, x: 8 }} // アニメーション終了後の状態
+          transition={{ duration: 1.9 }} // アニメーションの持続時間
+          whileHover={{ scale: 1.05 }} // ホバー時に少し拡大>
+        >
+          -
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: 54 }} // 初期状態
+          animate={{ opacity: 1, x: 10 }} // アニメーション終了後の状態
+          transition={{ duration: 1.9 }} // アニメーションの持続時間
+          whileHover={{ scale: 1.05 }} // ホバー時に少し拡大>
+        >
+          訪
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: 56 }} // 初期状態
+          animate={{ opacity: 1, x: 10 }} // アニメーション終了後の状態
+          transition={{ duration: 1.9 }} // アニメーションの持続時間
+          whileHover={{ scale: 1.05 }} // ホバー時に少し拡大>
+        >
+          問
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: 58 }} // 初期状態
+          animate={{ opacity: 1, x: 10 }} // アニメーション終了後の状態
+          transition={{ duration: 1.9 }} // アニメーションの持続時間
+          whileHover={{ scale: 1.05 }} // ホバー時に少し拡大>
+        >
+          歯
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, x: 60 }} // 初期状態
+          animate={{ opacity: 1, x: 10 }} // アニメーション終了後の状態
+          transition={{ duration: 1.9 }} // アニメーションの持続時間
+          whileHover={{ scale: 1.05 }} // ホバー時に少し拡大>
+        >
+          科
+        </motion.p>
+      </div>
     </header>
   );
 }

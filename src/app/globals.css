@@ -60,20 +60,22 @@ a {
   min-height: 0;
 }
 
-header ul{
+header ul {
   display: flex;
   width: 100%;
 }
 
-header ul li{
-padding-right: 1%;
+header ul li {
+  padding-right: 1%;
 }
 
-h2,h3,p{
+h2,
+h3,
+p {
   font-size: 14px;
 }
 
-p{
+p {
   display: inline-block;
 }
 
@@ -84,14 +86,14 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 72px;
+  height: 120px;
   margin: auto;
   padding: 0 20px;
   left: 5px;
   box-sizing: border-box;
   pointer-events: none;
   pointer-events: auto;
-  transition: all 0.55s cubic-bezier(0.17,0.84,0.44,1);
+  transition: all 0.55s cubic-bezier(0.17, 0.84, 0.44, 1);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -102,8 +104,10 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  background: white; /* 必要に応じて背景色を設定 */
-  z-index: 1000; /* ヘッダーが他のコンテンツの上に表示されるようにする */
+  background: white;
+  /* 必要に応じて背景色を設定 */
+  z-index: 1000;
+  /* ヘッダーが他のコンテンツの上に表示されるようにする */
 }
 
 .visible {
@@ -115,6 +119,156 @@ header {
 }
 
 
-.main-contents{
+.main-contents {
   margin-top: 10%;
+}
+
+.middle_contents {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+
+.pickup {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  width: 68vw;
+  margin: 0 auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.pickup {
+  display: flex;
+  gap: 20px;
+}
+
+.pick01,
+.pick02,
+.pick03,
+.pick04 {
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  animation-duration: 1.5s ease-in;
+  /* アニメーションの速度 */
+}
+
+.pick01:hover,
+.pick02:hover.pick03:hover.pick04:hover {
+  transform: translateX(10px);
+  transition-duration: 1.5s;
+  /* 横に10px移動 */
+}
+
+.middle01 {
+  box-sizing: border-box;
+  padding: 2%;
+}
+
+svg {
+  font-size: 19px;
+  color: #d59191;
+}
+
+.relative.w-full.h-\[400px\].overflow-hidden {
+  width: 700px;
+  padding-top: 4%;
+  padding-bottom: 3%;
+  padding-left: 1%;
+}
+
+.rco {
+  /* display: flex; */
+  /* flex-wrap: nowrap; */
+  /* justify-content: flex-start; */
+  /* flex-direction: row; */
+  width: 80%;
+}
+
+.pricing-table {
+  width: 75%;
+  border-collapse: collapse;
+  margin: 0px auto;
+  font-size: 14px;
+  text-align: left;
+}
+
+.pricing-table thead th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+}
+
+.pricing-table tbody td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.pricing-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.pricing-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.pricing-table td,
+.pricing-table th {
+  padding: 10px;
+}
+
+.pricing-table th {
+  font-size: 18px;
+}
+
+.pricing-table tbody tr td {
+  text-align: center;
+  font-weight: 400;
+  width: auto;
+  border: 1px solid #fbe5ce;
+}
+
+@media (max-width: 768px) {
+
+  .pricing-table,
+  .pricing-table tbody,
+  .pricing-table tr,
+  .pricing-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .pricing-table tr {
+    margin-bottom: 15px;
+  }
+
+  .pricing-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .pricing-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: 45%;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .pricing-table thead {
+    display: none;
+  }
 }

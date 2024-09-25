@@ -27,13 +27,22 @@ const Footer = () => {
           <p>メール: info@example.com</p>
         </div>
         <div style={socialMediaStyle}>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <div className='rr01'>
+            <p><Link href='/'>コンプライアンス</Link></p>
+          </div>
+          <div className='rr01'>
+            <p><Link href='/'>プラバイシーポリシー</Link></p>
+          </div>
+          <div className='rr01'>
+            <p><Link href='/'>サイトポリシー</Link></p>
+          </div>
+          <div className='rr01'>
+            <p><Link href='/'>リコリス歯科 / 訪問歯科</Link></p>
+          </div>
         </div>
       </div>
       <div style={copyRightStyle}>
-        <p>© 2024 サイト名. All Rights Reserved.</p>
+        <p>© 2024 リコリス歯科 / 訪問歯科. All Rights Reserved.</p>
       </div>
     </footer>
   );

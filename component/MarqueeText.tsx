@@ -19,7 +19,7 @@ const MarqueeText: React.FC = () => {
 const marqueeContainerStyle: React.CSSProperties = {
   overflow: 'hidden',
   whiteSpace: 'nowrap',
-  width: '100%', 
+  width: '100%',
   position: 'relative',
   height: '100px', // 高さを調整
   backgroundColor: '#f5f5f5', // 背景色（オプション）
@@ -28,15 +28,15 @@ const marqueeContainerStyle: React.CSSProperties = {
 const marqueeContentStyle: React.CSSProperties = {
   display: 'inline-block',
   paddingLeft: '100%', // 画面の右端から開始
-  animation: 'marquee 40s linear infinite', // アニメーションの定義
+  animation: 'marquee 100s linear infinite', // アニメーションの定義
 };
 
 const textStyle: React.CSSProperties = {
   fontSize: '8rem', // 文字の大きさ
   fontWeight: 'bold', // 文字を太く
-  color: '#fdb39b', // 文字の色
+  color: 'rgb(156 156 156)', // 文字の色
   whiteSpace: 'nowrap',
-  opacity:'0.2',
+  opacity: '0.09',
 };
 
 // グローバルに適用されるCSSを追加
